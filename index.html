@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./scss/style.css" />
+    <script src="./js/script.js" defer></script>
+    <title>Paint with html, scss and javaScript</title>
+  </head>
+  <body>
+    <div class="container">
+      <section class="drowing-board">
+        <canvas></canvas>
+      </section>
+      <section class="tools-board">
+        <div class="row">
+          <label class="title">SHAKILLAR</label>
+          <ul class="options">
+            <li class="option tool" id="rectangle">
+              <img
+                width="34px"
+                height="34px"
+                src="./icons/rectangle48.png"
+                alt="rectangle icon"
+              />
+            </li>
+            <li class="option tool" id="circle">
+              <img
+                width="34px"
+                height="34px"
+                src="./icons/circle50.png"
+                alt="circle icon"
+              />
+            </li>
+            <li class="option tool" id="triangle">
+              <img
+                width="34px"
+                height="34px"
+                src="./icons/triangle50.png"
+                alt="triangle icon"
+              />
+            </li>
+            <li class="option">
+              <input type="checkbox" id="fill-color" />
+              <label for="fill-color">Rangni to'ldirish</label>
+            </li>
+          </ul>
+        </div>
+        <div class="row">
+          <label class="title">VARIANTLAR</label>
+          <ul class="options">
+            <li class="option tool active" id="brush">
+              <img
+                width="34px"
+                height="34px"
+                src="./icons/brush30.png"
+                alt="brush"
+              />
+            </li>
+            <li class="option tool" id="eraser">
+              <img
+                width="34px"
+                height="34px"
+                src="./icons/eraser50.png"
+                alt="eraser"
+              />
+            </li>
+            <li class="option">
+              <input type="range" id="size-slider" min="1" max="30" value="5" />
+            </li>
+          </ul>
+        </div>
+        <div class="row colors">
+          <label class="title">RANGLAR</label>
+          <ul class="options">
+            <li class="option"></li>
+            <li class="option selected"></li>
+            <li class="option"></li>
+            <li class="option"></li>
+            <li class="option">
+              <input type="color" id="color-picker" value="#4a98f7" />
+            </li>
+          </ul>
+        </div>
+        <div class="row buttons">
+          <button type="button" class="clear-canvas">O'chirish</button>
+          <button type="button" class="save-img">Saqlash</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
