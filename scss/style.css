@@ -122,7 +122,10 @@ section {
   border-color: #afaeae;
 }
 
-.buttons button {
+.buttons button, .buttons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   color: #fff;
   border: 0;
@@ -160,5 +163,4 @@ section {
 .drowing-board #point-board {
   width: 100%;
   height: 100%;
-  border: 1px solid #d00;
 }/*# sourceMappingURL=style.css.map */

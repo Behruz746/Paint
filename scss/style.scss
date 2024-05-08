@@ -141,7 +141,10 @@ section {
 }
 
 .buttons {
-  button {
+  button, a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     color: #fff;
     border: 0;
@@ -182,6 +185,5 @@ section {
   #point-board {
     width: 100%;
     height: 100%;
-    border: 1px solid #d00;
   }
 }
